@@ -1,0 +1,18 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="clr-namespace:LayoutTransformControlWithStyleBug.Views">
+    
+
+    <Style Selector="views|MyControl[IsRotated=False] LayoutTransformControl">
+        <Setter Property="LayoutTransform">
+            <RotateTransform Angle="0" />
+        </Setter>
+    </Style>
+    
+    <Style Selector="views|MyControl[IsRotated=True] LayoutTransformControl">
+        <Setter Property="LayoutTransform">
+            <RotateTransform Angle="-90" />
+        </Setter>
+    </Style>
+    
+</Styles>
